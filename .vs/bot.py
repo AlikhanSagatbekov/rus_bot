@@ -1,6 +1,5 @@
 from telegram.ext import Updater, CommandHandler
 
-# Обработчик команды /start
 def start(update, context):
     update.message.reply_text('Привет! Я бот.')
 
