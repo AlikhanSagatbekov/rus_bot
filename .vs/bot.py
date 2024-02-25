@@ -1,5 +1,6 @@
 from telegram import ReplyKeyboardMarkup
-from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
+from telegram.ext import Updater, CommandHandler, MessageHandler
+from telegram.ext.filters import Filters
 
 # Обработчик команды /start
 def start(update, context):
@@ -19,7 +20,7 @@ def menu_button(update, context):
 
 def main():
     # Токен вашего бота
-    token = '6991834091:AAGSERCH4qFfMR18fa2GAIcCxRH9I31rPUQ'
+    token = 'YOUR_BOT_TOKEN'
     updater = Updater(token, use_context=True)
     dp = updater.dispatcher
 
